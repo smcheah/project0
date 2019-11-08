@@ -1,2 +1,3 @@
-# project0
-Website about me
+# Project 0
+
+Web Programming with Python and JavaScript
