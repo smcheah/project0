@@ -1,14 +1,6 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
     <body>
-        <ul>
-            <li>HOME</li>
-            <li>SIMONE</li>
-            <li>INTERESTS</li>
-            <li>KNOTS</li>
-        </ul>
-
+        <h1>This is a placeholder for GitHub pages<h1>
+        <p>Click <a href="index.html">here<a> to go to HOME<p>
     </body>
 </html>
