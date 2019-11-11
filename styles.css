@@ -1,1 +1,13 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css?family=Exo:800|PT+Serif:700|Montserrat");
+body {
+  font-family: 'Montserrat';
+}
+
+main {
+  font-family: 'Exo';
+}
+
+section {
+  font-family: 'PT Serif';
+}
+/*# sourceMappingURL=styles.css.map */
