@@ -1,13 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:800|PT+Serif:700|Montserrat');
 
-main {
-    font-family: 'Exo';
-    color: white;
+* {
+    font-family: 'Montserrat', 'PT Serif', 'Exo';
+    margin: 0;
+    padding: 0;
 }
-section {
-    font-family: 'PT Serif';
+
+ul {
+    list-style-type: none;
+    display: flex;
 }
-body {
-    font-family: 'Montserrat';
-    background-color: black;
-    content: "";
+
+header {
+    margin-top: 2em;
+    
+    ul {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        li {
+            text-decoration: none; 
+            
+            a { padding: 1em; }
+            :hover { border: 1px solid black; }
+        }
+    } 
+}
+
+.home-container {
+
+}

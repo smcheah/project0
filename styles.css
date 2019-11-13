@@ -1,49 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:800|PT+Serif:700|Montserrat");
 * {
-  bottom: 0;
+  font-family: 'Montserrat', 'PT Serif', 'Exo';
+  margin: 0;
+  padding: 0;
 }
 
-main {
-  font-family: 'Exo';
-  color: white;
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-section {
-  font-family: 'PT Serif';
+header {
+  margin-top: 2em;
 }
 
-body {
-  font-family: 'Montserrat';
-  background-color: black;
-  content: "";
+header ul {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.container {
-  position: relative;
-  overflow: hidden;
+header ul li {
+  text-decoration: none;
 }
 
-.container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -60;
+header ul li a {
+  padding: 1em;
 }
 
-.container li img {
-  position: absolute;
-  top: 0;
-  left: 800px;
-  z-index: -50;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-li:nth-child(1) {
-  padding-top: 50px;
-}
-
-#letter-s:hover + img {
-  left: 0px;
+header ul li :hover {
+  border: 1px solid black;
 }
 /*# sourceMappingURL=styles.css.map */
