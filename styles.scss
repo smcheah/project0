@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:800|PT+Serif:700|Montserrat');
 
 * {
-    font-family: 'Montserrat', 'PT Serif', 'Exo';
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-}
-
 header {
-    margin-top: 2em;
+    margin: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5em;
     
     ul {
         justify-content: space-evenly;
@@ -20,14 +18,68 @@ header {
         flex-wrap: wrap;
         
         li {
-            text-decoration: none; 
-            
-            a { padding: 1em; }
-            :hover { border: 1px solid black; }
+            a { margin: 2em; padding: 1em; }
+            :hover { border: 1px solid white; text-decoration: none;}
         }
     } 
 }
 
-.home-container {
-
+ul {
+    list-style-type: none;
+    display: flex;
 }
+
+//HOMEPAGE
+.home-container {
+    bottom: 0;
+    padding: 5%;
+    color: white;
+    font-size: 20vw;
+    display: block;
+    
+    li, h3 {
+        font-family: 'Exo';
+    }
+    h3 {
+        text-align: right;
+        margin-right: 5%;
+        font-size: 20%;
+    }
+    ul {
+        justify-content: center;
+    }
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .20s;
+    background-color: black;
+}
+
+.letter {
+    li:first-child:hover ~ .bg {
+        background-color: #ffca6d;
+    }
+    li:nth-child(2):hover ~ .bg {
+        background-color: #ff6d6d;
+    }
+    li:nth-child(3):hover ~ .bg {
+        background-color: #6dffb9;
+    }
+    li:nth-child(4):hover ~ .bg {
+        background-color: #6dcaff;
+    }
+    li:nth-child(5):hover ~ .bg {
+        background-color: #ec6dff;
+    }
+    li:nth-child(6):hover ~ .bg {
+        background-color: slateblue;
+    }
+}
+
+//BIRDS
