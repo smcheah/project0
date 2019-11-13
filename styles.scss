@@ -83,3 +83,18 @@ ul {
 }
 
 //BIRDS
+.birds-scroll {
+    animation: 4s linear 0s infinite bp;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes bp {
+    from {
+      background-position:  198px 0;
+    }
+    
+    to {
+      background-position:  0 198px;
+    }
+  }
