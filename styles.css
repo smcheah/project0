@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Exo:800|PT+Serif:700|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Exo:800|PT+Serif:700|Montserrat|Bitter");
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -100,35 +100,95 @@ ul {
   background-color: slateblue;
 }
 
+#birds {
+  background-image: url(http://www.commentnation.com/backgrounds/images/gray_and_white_diagonal_stripes_background_seamless.gif);
+  background-size: cover;
+}
+
+.birds-heading {
+  text-align: center;
+}
+
+.birds-heading h1 {
+  font-family: 'Bitter';
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+.birds-heading h2 {
+  padding: 5%;
+  font-family: 'Exo';
+  font-size: 7em;
+}
+
 .birds-scroll {
-  -webkit-animation: 4s linear 0s infinite bp;
-          animation: 4s linear 0s infinite bp;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  z-index: 5;
+  display: inline-block;
+  overflow: visible;
+  background-color: white;
+  opacity: 80%;
 }
 
-@-webkit-keyframes bp {
-  from {
-    background-position: 198px 0;
-  }
+.birds-scroll ul {
+  white-space: nowrap;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.birds-scroll ul li {
+  width: 450px;
+  white-space: pre-line;
+  border: 1px solid black;
+  font-size: 2rem;
+  padding: 0.3%;
+  text-align: center;
+  font-family: monospace;
+}
+
+.birds-scroll .scroll-left {
+  bottom: 0;
+}
+
+.birds-scroll :hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.scroll-right {
+  -webkit-animation: scroll-right 60s linear 0s infinite alternate;
+          animation: scroll-right 60s linear 0s infinite alternate;
+}
+
+.scroll-left {
+  animation: scroll-left 60s linear 0s infinite alternate-reverse;
+}
+
+@-webkit-keyframes scroll-right {
   to {
-    background-position: 0 198px;
+    -webkit-transform: translateX(var(--direction, -50%));
+            transform: translateX(var(--direction, -50%));
   }
 }
 
-@keyframes bp {
-  from {
-    background-position: 198px 0;
-  }
+@keyframes scroll-right {
   to {
-    background-position: 0 198px;
+    -webkit-transform: translateX(var(--direction, -50%));
+            transform: translateX(var(--direction, -50%));
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  to {
+    -webkit-transform: translateX(var(--direction, -50%));
+            transform: translateX(var(--direction, -50%));
+  }
+}
+
+@keyframes scroll-left {
+  to {
+    -webkit-transform: translateX(var(--direction, -50%));
+            transform: translateX(var(--direction, -50%));
   }
 }
 /*# sourceMappingURL=styles.css.map */

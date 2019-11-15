@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:800|PT+Serif:700|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Exo:800|PT+Serif:700|Montserrat|Bitter');
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -83,18 +83,69 @@ ul {
 }
 
 //BIRDS
-.birds-scroll {
-    animation: 4s linear 0s infinite bp;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#birds {
+    background-image: url(http://www.commentnation.com/backgrounds/images/gray_and_white_diagonal_stripes_background_seamless.gif);
+    background-size: cover;
 }
-@keyframes bp {
-    from {
-      background-position:  198px 0;
-    }
+
+.birds-heading {
+    text-align: center;
     
-    to {
-      background-position:  0 198px;
+    h1 {
+        font-family: 'Bitter';
+        font-size: 2em;
+        padding-bottom: 10px;
     }
-  }
+    h2 {
+        padding: 5%;
+        font-family: 'Exo';
+        font-size: 7em;
+    }
+}
+
+.birds-scroll {
+    z-index: 5;
+    display: inline-block;
+    overflow: visible;
+    background-color: white;
+    opacity: 80%;
+    
+    ul {
+        white-space: nowrap;
+        height: fit-content;
+        
+        li {
+            width: 450px;
+            white-space: pre-line;
+            border: 1px solid black;
+            font-size: 2rem;
+            padding: 0.3%;
+            text-align: center;
+            font-family: monospace;
+        }
+    }
+    .scroll-left {
+        bottom: 0;
+    }
+    :hover {
+	    animation-play-state: paused;
+    }
+}
+
+.scroll-right {
+    animation: scroll-right 60s linear 0s infinite alternate;
+}
+.scroll-left {
+    animation: scroll-left 60s linear 0s infinite alternate-reverse;
+}
+
+@keyframes scroll-right {
+    to {
+        transform: translateX(var(--direction, -50%));
+    }
+}
+@keyframes scroll-left {
+    to {
+        transform: translateX(var(--direction, -50%));
+    }
+}
