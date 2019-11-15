@@ -12,14 +12,22 @@ header {
     margin-right: 10%;
     font-size: 1.5em;
     
+    
     ul {
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
         
         li {
-            a { margin: 2em; padding: 1em; }
-            :hover { border: 1px solid white; text-decoration: none;}
+            a { 
+                margin: 2em; 
+                padding: 1em; 
+                color: rgb(105, 189, 192);
+            }
+            :hover { 
+                border: 1px solid rgb(189, 189, 189); text-decoration: none;
+                color: rgb(55, 196, 201);
+            }
         }
     } 
 }

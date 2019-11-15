@@ -26,11 +26,13 @@ header ul {
 header ul li a {
   margin: 2em;
   padding: 1em;
+  color: #69bdc0;
 }
 
 header ul li :hover {
-  border: 1px solid white;
+  border: 1px solid #bdbdbd;
   text-decoration: none;
+  color: #37c4c9;
 }
 
 ul {
