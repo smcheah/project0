@@ -8,7 +8,7 @@ Inspiration from CS50's Web Programming with Python and JavaScript: Project #0 -
 https://smcheah.github.io/project0/
 
 ## Technologies Used
-* purely CSS and HTML
+* purely SCSS and HTML
 
 ## License
 [MIT License](https://github.com/smcheah/project0/blob/master/LICENSE)
